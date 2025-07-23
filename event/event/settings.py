@@ -148,3 +148,16 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+import os
+
+DEBUG = False
+
+ALLOWED_HOSTS = ['myevent.onrender.com']  # Replace with your actual Render app name
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # for static files
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # optional
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
