@@ -153,13 +153,13 @@ import os
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['myevent.onrender.com']  # Replace with your actual Render app name
+ALLOWED_HOSTS = ['*']  # Replace with your actual Render app name
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # for static files
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # optional
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # CSRF_TRUSTED_ORIGINS = [f"https://{host}" for host in ALLOWED_HOSTS if host]
 CSRF_TRUSTED_ORIGINS = ['https://myevent.onrender.com']
 
